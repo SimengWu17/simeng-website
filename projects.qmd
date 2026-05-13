@@ -6,7 +6,7 @@ title: "Projects"
 
 **Keywords:** volatility forecasting, options trading, GARCH, machine learning, LSTM, QuantConnect
 
-This project develops a systematic volatility forecasting and options trading framework for SPY short-dated options. We modeled annualized 5-day realized volatility using GARCH-family models, Random Forests, feedforward neural networks, and LSTM-based models, and compared predicted realized volatility with at-the-money implied volatility to construct volatility-edge trading signals.
+This project develops a systematic volatility forecasting and options trading framework for SPY short-dated options. I modeled annualized 5-day realized volatility using GARCH-family models, Random Forests, feedforward neural networks, and LSTM-based models, and compared predicted realized volatility with at-the-money implied volatility to construct volatility-edge trading signals.
 
 The strategy was implemented and backtested in QuantConnect using long/short straddles and strangles with explicit entry, exit, and risk-management rules.
 
