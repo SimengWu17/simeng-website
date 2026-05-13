@@ -94,7 +94,7 @@ I enjoy turning open-ended questions into structured analytical workflows: defin
 
 <div class="contact-item">
 <span class="contact-icon">✉</span>
-<a href="mailto:sw701@duke.edu">simeng.wu@duke.edu</a>
+<a href="mailto:sw701@duke.edu">sw701@duke.edu</a>
 </div>
 
 <div class="contact-item">
