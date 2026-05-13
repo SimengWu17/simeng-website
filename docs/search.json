@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "You can download my CV here:\nDownload CV"
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "CV",
+    "section": "Education",
+    "text": "Education\nDuke University\nM.S. in Statistical Science\nUniversity College London\nB.Sc. in Statistics, Economics and Finance"
+  },
+  {
+    "objectID": "cv.html#selected-skills",
+    "href": "cv.html#selected-skills",
+    "title": "CV",
+    "section": "Selected Skills",
+    "text": "Selected Skills\nProgramming: Python, R, SQL, Stata, SAS\nStatistical Methods: regression, time series, Bayesian modeling, missing data, machine learning\nTools: Quarto, Git, Docker, FastAPI, QuantConnect"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Keywords: volatility forecasting, options trading, GARCH, machine learning, LSTM, QuantConnect\nThis project develops a systematic volatility forecasting and options trading framework for SPY short-dated options. We modeled annualized 5-day realized volatility using GARCH-family models, Random Forests, feedforward neural networks, and LSTM-based models, and compared predicted realized volatility with at-the-money implied volatility to construct volatility-edge trading signals.\nThe strategy was implemented and backtested in QuantConnect using long/short straddles and strangles with explicit entry, exit, and risk-management rules.\nRead Paper\nMethods: GARCH, EGARCH, GJR-GARCH, Random Forest, feedforward neural networks, LSTM, volatility forecasting, options backtesting\nTools: Python, QuantConnect, scikit-learn, arch, pandas, TensorFlow/PyTorch"
+  },
+  {
+    "objectID": "projects.html#short-dated-options-volatility-forecasting-and-trading-strategy",
+    "href": "projects.html#short-dated-options-volatility-forecasting-and-trading-strategy",
+    "title": "Projects",
+    "section": "",
+    "text": "Keywords: volatility forecasting, options trading, GARCH, machine learning, LSTM, QuantConnect\nThis project develops a systematic volatility forecasting and options trading framework for SPY short-dated options. We modeled annualized 5-day realized volatility using GARCH-family models, Random Forests, feedforward neural networks, and LSTM-based models, and compared predicted realized volatility with at-the-money implied volatility to construct volatility-edge trading signals.\nThe strategy was implemented and backtested in QuantConnect using long/short straddles and strangles with explicit entry, exit, and risk-management rules.\nRead Paper\nMethods: GARCH, EGARCH, GJR-GARCH, Random Forest, feedforward neural networks, LSTM, volatility forecasting, options backtesting\nTools: Python, QuantConnect, scikit-learn, arch, pandas, TensorFlow/PyTorch"
+  },
+  {
+    "objectID": "projects.html#chess-anomaly-detection-with-metropolis-hastings-sampling",
+    "href": "projects.html#chess-anomaly-detection-with-metropolis-hastings-sampling",
+    "title": "Projects",
+    "section": "Chess Anomaly Detection with Metropolis-Hastings Sampling",
+    "text": "Chess Anomaly Detection with Metropolis-Hastings Sampling\nKeywords: anomaly detection, Metropolis-Hastings, Bayesian computation, chess analytics, FastAPI\nThis project develops a probabilistic framework for detecting unusually strong chess play by comparing observed move sequences against a counterfactual human baseline. The method uses Maia-based human move proposals and Stockfish-based centipawn-loss scoring within a Metropolis-Hastings sampling framework.\nWe also built a FastAPI service to make the sampler reproducible and easier to run.\nMethods: Metropolis-Hastings sampling, empirical p-value testing, Markov chain diagnostics, anomaly detection\nTools: Python, FastAPI, Docker, Stockfish, Polars"
+  },
+  {
+    "objectID": "projects.html#web-scraped-recipe-dataset-construction-and-interactive-analysis",
+    "href": "projects.html#web-scraped-recipe-dataset-construction-and-interactive-analysis",
+    "title": "Projects",
+    "section": "Web-Scraped Recipe Dataset Construction and Interactive Analysis",
+    "text": "Web-Scraped Recipe Dataset Construction and Interactive Analysis\nKeywords: web scraping, data cleaning, R Shiny, interactive analysis, data validation\nThis project builds an automated web-scraping pipeline to collect and structure recipe data from the official game Wiki for Stardew Valley. The pipeline extracts recipe structure, ingredient composition, and numerical buff effects from heterogeneous HTML pages, with parsing and validation workflows designed to improve data quality and reproducibility.\nWe also developed core analysis logic to support recipe search, craftable recipe identification, and minimal-additional-ingredient recommendations. The final output includes an interactive R Shiny application that enables flexible exploration of the dataset and supports high-usability recipe analysis workflows.\nGitHub Repository\nMethods: web scraping, HTML parsing, data validation, rule-based filtering, interactive application development\nTools: R, R Shiny, rvest, dplyr, stringr"
+  },
+  {
+    "objectID": "projects.html#insurance-subrogation-outcome-prediction",
+    "href": "projects.html#insurance-subrogation-outcome-prediction",
+    "title": "Projects",
+    "section": "Insurance Subrogation Outcome Prediction",
+    "text": "Insurance Subrogation Outcome Prediction\nKeywords: supervised learning, classification, insurance analytics, model evaluation\nThis project focuses on predicting insurance subrogation outcomes using claim-level information, loss severity indicators, and recovery-related attributes. I performed end-to-end preprocessing and feature engineering, including categorical encoding, interaction terms, and distributional transformations.\nI developed and compared multiple tree-based models, including XGBoost, LightGBM, CatBoost, and TabM. The final modeling pipeline emphasized reproducible experimentation, cross-validation, and out-of-sample robustness.\nMethods: classification, feature engineering, cross-validation, model comparison, ensemble learning\nTools: Python, XGBoost, LightGBM, CatBoost, scikit-learn, SHAP"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Simeng Wu\n\nM.S. Student in Statistical Science, Duke University\n\nStatistical Modeling · Missing Data · Bayesian Methods · Applied Machine Learning\n\n\nI am a Master’s student in Statistical Science at Duke University. Before Duke, I studied Statistics, Economics, and Finance at University College London.\nMy interests span statistical modeling, missing data, Bayesian methods, machine learning, and data-driven decision making. I enjoy projects that combine rigorous statistical thinking with practical implementation.\n\nView Projects\nDownload CV\n\n\n\n\n\n\n\nProjects\n\n\n\n \n\nVolatility Forecasting and Options Trading\n\n\n\n\n \n\nChess Anomaly Detection\n\n\n\n\n \n\nRecipe Dataset and Shiny App\n\n\n\n\n \n\nInsurance Subrogation Prediction"
+  }
+]

@@ -1,0 +1,75 @@
+---
+title: "Home"
+---
+
+<div class="hero-section">
+
+<div class="hero-bg-overlay"></div>
+
+<div class="hero-content">
+
+<div class="hero-left">
+
+![](images/photo_duke.jpg){.profile-image}
+
+# Simeng Wu
+
+### M.S. Student in Statistical Science, Duke University
+
+<div class="hero-subtitle">
+Statistical Modeling · Missing Data · Bayesian Methods · Applied Machine Learning
+</div>
+
+<div class="hero-description">
+I am a Master's student in Statistical Science at Duke University. Before Duke, I studied Statistics, Economics, and Finance at University College London.
+
+My interests span statistical modeling, missing data, Bayesian methods, machine learning, and data-driven decision making. I enjoy projects that combine rigorous statistical thinking with practical implementation.
+</div>
+
+[View Projects](#projects){.btn .btn-primary .hero-btn}
+
+[Download CV](files/Simeng_CV2026.pdf){.btn .btn-outline-dark .hero-btn}
+
+</div>
+
+</div>
+
+</div>
+
+<div id="projects" class="home-projects-section">
+
+<h1 class="home-projects-title">Projects</h1>
+
+<div class="project-grid">
+
+<div class="project-card">
+<a href="projects.qmd#short-dated-options-volatility-forecasting-and-trading-strategy">
+<img src="images/volatility.png" alt="Volatility forecasting">
+<div class="project-card-overlay">Volatility Forecasting and Options Trading</div>
+</a>
+</div>
+
+<div class="project-card">
+<a href="projects.qmd#chess-anomaly-detection-with-metropolis-hastings-sampling">
+<img src="images/chess.png" alt="Chess anomaly detection">
+<div class="project-card-overlay">Chess Anomaly Detection</div>
+</a>
+</div>
+
+<div class="project-card">
+<a href="projects.qmd#web-scraped-recipe-dataset-construction-and-interactive-analysis">
+<img src="images/recipe.png" alt="Recipe dataset">
+<div class="project-card-overlay">Recipe Dataset and Shiny App</div>
+</a>
+</div>
+
+<div class="project-card">
+<a href="projects.qmd#insurance-subrogation-outcome-prediction">
+<img src="images/insurance.png" alt="Insurance prediction">
+<div class="project-card-overlay">Insurance Subrogation Prediction</div>
+</a>
+</div>
+
+</div>
+
+</div>

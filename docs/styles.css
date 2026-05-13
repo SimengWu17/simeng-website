@@ -1,0 +1,345 @@
+body {
+    font-size: 16px;
+    line-height: 1.65;
+    color: #222;
+    background-color: #ffffff;
+}
+
+/* =========================
+   Navbar
+   ========================= */
+
+.navbar {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+.navbar-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 0.3px;
+}
+
+/* Hide default Quarto title block */
+.quarto-title-block {
+    display: none;
+}
+
+/* General headings */
+h1,
+h2,
+h3 {
+    font-weight: 600;
+}
+
+h2 {
+    margin-top: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Main content width */
+main.content {
+    max-width: 1200px;
+    padding-bottom: 3rem;
+}
+
+/* =========================
+   Homepage hero section
+   ========================= */
+
+.hero-section {
+    position: relative;
+    min-height: calc(100vh - 70px);
+    padding: 3rem 2rem;
+    overflow: hidden;
+
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    background-image: url("images/whitescliff.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.hero-bg-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(to right,
+            rgba(255, 255, 255, 0.88) 0%,
+            rgba(255, 255, 255, 0.72) 25%,
+            rgba(255, 255, 255, 0.35) 48%,
+            rgba(255, 255, 255, 0.08) 75%,
+            rgba(255, 255, 255, 0.02) 100%);
+
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 610px;
+    margin-left: 3vw;
+}
+
+.hero-left {
+    text-align: center;
+    max-width: 590px;
+    padding: 1.2rem 1.2rem;
+    background: transparent;
+}
+
+.hero-left h1,
+.hero-left h3,
+.hero-subtitle,
+.hero-description {
+    text-shadow: 0 1px 8px rgba(255, 255, 255, 0.7);
+}
+
+.profile-image {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1.15rem;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
+}
+
+.hero-left h1 {
+    font-size: 2.35rem;
+    line-height: 1.1;
+    margin-top: 0.25rem;
+    margin-bottom: 0.45rem;
+    font-weight: 700;
+}
+
+.hero-left h3 {
+    font-size: 1.08rem;
+    line-height: 1.35;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #444;
+}
+
+.hero-subtitle {
+    font-size: 0.98rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1.2rem;
+}
+
+.hero-description {
+    font-size: 0.96rem;
+    line-height: 1.72;
+    color: #444;
+    margin: 0 auto 1.4rem auto;
+    max-width: 500px;
+    text-align: left;
+}
+
+.hero-btn {
+    margin-right: 8px;
+    margin-top: 8px;
+    font-size: 0.9rem;
+    padding: 0.45rem 0.85rem;
+}
+
+/* =========================
+   Homepage projects cards
+   ========================= */
+
+.home-projects-section {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding: 4rem 4.5rem 4.8rem 4.5rem;
+
+    background:
+        linear-gradient(135deg,
+            #eef3f7 0%,
+            #dce8f0 45%,
+            #c5d6e3 100%);
+
+    color: #1f2a33;
+}
+
+.home-projects-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    margin-bottom: 2.8rem;
+    color: #1f2a33;
+}
+
+/* Strict 2 x 2 grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.8rem;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.project-card {
+    height: 270px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #dbe6ee;
+    box-shadow: 0 10px 24px rgba(30, 50, 70, 0.18);
+}
+
+.project-card a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.045);
+    opacity: 0.92;
+}
+
+.project-card-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: rgba(245, 248, 250, 0.74);
+    color: #1f2a33;
+    text-align: center;
+
+    padding: 0.9rem 1.2rem;
+    font-size: 1.2rem;
+    line-height: 1.35;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+/* =========================
+   Projects detail page
+   ========================= */
+
+main.content h2 {
+    margin-top: 2.8rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+main.content hr {
+    display: none;
+}
+
+main.content h3 {
+    font-size: 1.25rem;
+    margin-top: 1.6rem;
+}
+
+main.content p {
+    max-width: 850px;
+}
+
+main.content .btn {
+    margin-top: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+
+/* =========================
+   Mobile responsive
+   ========================= */
+
+@media (max-width: 900px) {
+    .hero-section {
+        min-height: auto;
+        padding: 2.5rem 1.2rem;
+        justify-content: center;
+        background-position: center center;
+    }
+
+    .hero-bg-overlay {
+        background:
+            linear-gradient(to bottom,
+                rgba(255, 255, 255, 0.82) 0%,
+                rgba(255, 255, 255, 0.65) 55%,
+                rgba(255, 255, 255, 0.35) 100%);
+    }
+
+    .hero-content {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .hero-left {
+        max-width: 100%;
+    }
+
+    .profile-image {
+        width: 165px;
+        height: 165px;
+    }
+
+    .hero-left h1 {
+        font-size: 2.1rem;
+    }
+
+    .hero-left h3 {
+        font-size: 1.05rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .hero-description {
+        text-align: center;
+        font-size: 0.95rem;
+    }
+
+    .home-projects-section {
+        padding: 3rem 2rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        height: 240px;
+    }
+}
+
+@media (max-width: 650px) {
+    .home-projects-section {
+        padding: 2.5rem 1rem;
+    }
+
+    .project-card {
+        height: 210px;
+    }
+
+    .project-card-overlay {
+        font-size: 1.08rem;
+    }
+}

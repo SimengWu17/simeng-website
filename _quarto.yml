@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Simeng Wu"
+  navbar:
+    right:
+      - text: "Home"
+        href: index.qmd
+      - text: "Projects"
+        href: projects.qmd
+      - text: "CV"
+        href: cv.qmd
+      - icon: github
+        href: https://github.com/SimengWu17
+      - icon: linkedin
+        href: https://www.linkedin.com/in/simeng-wu
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
