@@ -7,6 +7,9 @@ project:
 
 website:
   title: "Simeng Wu"
+  site-url: "https://simengwu17.github.io/simeng-website/"
+  description: "Personal academic website of Simeng Wu."
+  image: "images/preview.png"
   navbar:
     right:
       - text: "Home"
@@ -27,3 +30,4 @@ format:
     theme: cosmo
     css: styles.css
     toc: false
+  
