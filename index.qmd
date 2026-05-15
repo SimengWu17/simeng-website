@@ -1,5 +1,7 @@
 ---
 title: "Home"
+image: images/preview.png
+description: "Personal academic website of Simeng Wu, including education, projects, skills, and CV."
 ---
 
 <div class="hero-section">
