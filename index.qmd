@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "Simeng Wu | Personal Website"
 image: images/preview.png
 description: "Personal academic website of Simeng Wu, including education, projects, skills, and CV."
 ---
