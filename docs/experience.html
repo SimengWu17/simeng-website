@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Projects – Simeng Wu</title>
+<title>Experience – Simeng Wu</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -95,11 +95,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+    <a class="nav-link" href="./projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./experience.html"> 
+    <a class="nav-link active" href="./experience.html" aria-current="page"> 
 <span class="menu-text">Experience</span></a>
   </li>  
   <li class="nav-item">
@@ -133,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projects</h1>
+<h1 class="title">Experience</h1>
 </div>
 
 
@@ -150,91 +150,71 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="project-detail-page">
-<h1 class="project-detail-title">
-Projects
+<div class="experience-page">
+<h1 class="experience-title">
+Experience
 </h1>
-<div id="short-dated-options-volatility-forecasting-and-trading-strategy" class="project-detail-card">
+<p class="experience-intro">
+Selected internship experiences across consulting, investment analysis, and securities research.
+</p>
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-year">
+2024
+</div>
+<div class="timeline-card">
 <h2 class="anchored">
-Short-Dated Options Volatility Forecasting and Trading Strategy
+Consulting Internship
 </h2>
-<div class="project-tags">
-<p><span>Volatility Forecasting</span> <span>Options Trading</span> <span>GARCH</span> <span>LSTM</span> <span>Neural Networks</span></p>
+<div class="experience-meta">
+Moore
 </div>
 <p>
-This project develops an end-to-end framework that connects short-horizon volatility forecasting with systematic SPY options strategy design. I modeled annualized 5-day realized volatility using <strong>GARCH-family</strong> models, <strong>Random Forests</strong>, feedforward <strong>neural networks</strong>, and LSTM-based models, then compared the forecasts with at-the-money implied volatility to construct a volatility-edge signal.
+Worked on client-oriented consulting projects involving financial analysis, accounting, risk management, and sustainable investment topics.
 </p>
-<p>
-The strategy component translates this signal into long- and short-volatility option positions, with attention to option structure selection, entry and exit rules, position sizing, and risk management. The full workflow was implemented and backtested in <strong>QuantConnect</strong>.
-</p>
-<p>
-<strong>Methods:</strong> GARCH, EGARCH, GJR-GARCH, Random Forest, feedforward neural networks, LSTM, volatility-edge signal construction, options strategy design, backtesting
-</p>
-<p>
-<strong>Tools:</strong> Python, QuantConnect, scikit-learn, arch, pandas
-</p>
-<p><a class="project-link-button" href="files/volatility_forecasting_options_strategy.pdf">Read Paper</a></p>
+<div class="experience-tags">
+<p><span>Consulting</span> <span>Risk Management</span> <span>Financial Analysis</span></p>
 </div>
-<div id="chess-anomaly-detection-with-metropolis-hastings-sampling" class="project-detail-card">
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-year">
+2023
+</div>
+<div class="timeline-card">
 <h2 class="anchored">
-Chess Anomaly Detection with Metropolis-Hastings Sampling
+Investment Research Intern
 </h2>
-<div class="project-tags">
-<p><span>Anomaly Detection</span> <span>Metropolis-Hastings</span> <span>Bayesian Computation</span> <span>FastAPI</span> <span>Stockfish</span></p>
+<div class="experience-meta">
+Deyu Family Office
 </div>
 <p>
-This project develops a <strong>probabilistic anomaly detection framework</strong> for identifying unusually strong chess play by comparing observed move sequences against a counterfactual human baseline. The method uses <strong>Maia-based human move proposals</strong> and <strong>Stockfish-based centipawn-loss scoring</strong> within a <strong>Metropolis-Hastings sampling</strong> framework.
+Supported investment research and financial analysis in a family office setting, with exposure to portfolio management and sustainable investment considerations.
 </p>
-<p>
-The project also includes a <strong>FastAPI service</strong> to make the sampler easier to run, reproduce, and test through structured API endpoints.
-</p>
-<p>
-<strong>Methods:</strong> Metropolis-Hastings sampling, empirical p-value testing, Markov chain diagnostics
-</p>
-<p>
-<strong>Tools:</strong> Python, FastAPI, Docker, Stockfish, Polars
-</p>
+<div class="experience-tags">
+<p><span>Family Office</span> <span>Investment Research</span> <span>Portfolio Analysis</span></p>
 </div>
-<div id="web-scraped-recipe-dataset-construction-and-interactive-analysis" class="project-detail-card">
+</div>
+</div>
+<div class="timeline-item">
+<div class="timeline-year">
+2023
+</div>
+<div class="timeline-card">
 <h2 class="anchored">
-Web-Scraped Recipe Dataset Construction and Interactive Analysis
+Market Research and Financial Analysis Intern
 </h2>
-<div class="project-tags">
-<p><span>Web Scraping</span> <span>R Shiny</span> <span>Data Cleaning</span> <span>Interactive Analysis</span></p>
+<div class="experience-meta">
+HuaFu Securities
 </div>
 <p>
-This project builds an automated <strong>web-scraping pipeline</strong> to collect and structure recipe data from the official game Wiki for <em>Stardew Valley</em>. The pipeline extracts recipe structure, ingredient composition, and numerical buff effects from heterogeneous HTML pages.
+Supported ETF-related market research and financial analysis, with exposure to ETF product structures, market trends, and investment research workflows.
 </p>
-<p>
-The final output includes an <strong>interactive R Shiny application</strong> that supports recipe search, craftable recipe identification, and minimal-additional-ingredient recommendations.
-</p>
-<p>
-<strong>Methods:</strong> web scraping, HTML parsing, rule-based filtering, interactive application development
-</p>
-<p>
-<strong>Tools:</strong> R, R Shiny, rvest, dplyr, stringr
-</p>
-<p><a class="project-link-button" href="https://github.com/SimengWu17/Stardew_Valley_R_Shiny">GitHub Repository</a></p>
+<div class="experience-tags">
+<p><span>Securities</span> <span>Market Research</span> <span>Financial Analysis</span></p>
 </div>
-<div id="insurance-subrogation-outcome-prediction" class="project-detail-card">
-<h2 class="anchored">
-Insurance Subrogation Outcome Prediction
-</h2>
-<div class="project-tags">
-<p><span>Supervised Learning</span> <span>Insurance Analytics</span> <span>Classification</span> <span>Model Evaluation</span></p>
 </div>
-<p>
-This project focuses on predicting <strong>insurance subrogation outcomes</strong> using claim-level information, loss severity indicators, and recovery-related attributes. I performed preprocessing and feature engineering, including categorical encoding, interaction terms, and distributional transformations.
-</p>
-<p>
-I developed and compared multiple tree-based models, including <strong>XGBoost</strong>, <strong>LightGBM</strong>, <strong>CatBoost</strong>, and <strong>TabM</strong>. The modeling pipeline emphasized reproducible experimentation, cross-validation, and out-of-sample robustness.
-</p>
-<p>
-<strong>Methods:</strong> classification, feature engineering, cross-validation, model comparison, ensemble learning
-</p>
-<p>
-<strong>Tools:</strong> Python, XGBoost, LightGBM, CatBoost, scikit-learn, SHAP
-</p>
+</div>
 </div>
 </div>
 

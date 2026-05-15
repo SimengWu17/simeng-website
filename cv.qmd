@@ -17,5 +17,5 @@ B.Sc. in Statistics, Economics and Finance
 ## Selected Skills
 
 **Programming:** Python, R, SQL, Stata, SAS  
-**Statistical Methods:** regression, time series, Bayesian modeling, missing data, machine learning  
+**Statistical Methods:** Regression, Time Series, Bayesian Modeling, Machine Learning  
 **Tools:** Quarto, Git, Docker, FastAPI, QuantConnect

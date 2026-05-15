@@ -2,56 +2,114 @@
 title: "Projects"
 ---
 
-## Short-Dated Options Volatility Forecasting and Trading Strategy
+<div class="project-detail-page">
 
-**Keywords:** volatility forecasting, options trading, GARCH, machine learning, LSTM, QuantConnect
+<h1 class="project-detail-title">Projects</h1>
 
-This project develops a systematic volatility forecasting and options trading framework for SPY short-dated options. I modeled annualized 5-day realized volatility using GARCH-family models, Random Forests, feedforward neural networks, and LSTM-based models, and compared predicted realized volatility with at-the-money implied volatility to construct volatility-edge trading signals.
+<div class="project-detail-card" id="short-dated-options-volatility-forecasting-and-trading-strategy">
 
-The strategy was implemented and backtested in QuantConnect using long/short straddles and strangles with explicit entry, exit, and risk-management rules.
+<h2>Short-Dated Options Volatility Forecasting and Trading Strategy</h2>
 
-[Read Paper](files/volatility_forecasting_options_strategy.pdf){.btn .btn-primary}
+<div class="project-tags">
+<span>Volatility Forecasting</span>
+<span>Options Trading</span>
+<span>GARCH</span>
+<span>LSTM</span>
+<span>Neural Networks</span>
+</div>
 
-**Methods:** GARCH, EGARCH, GJR-GARCH, Random Forest, feedforward neural networks, LSTM, volatility forecasting, options backtesting  
-**Tools:** Python, QuantConnect, scikit-learn, arch, pandas, TensorFlow/PyTorch
+<p>
+This project develops an end-to-end framework that connects short-horizon volatility forecasting with systematic SPY options strategy design. I modeled annualized 5-day realized volatility using <strong>GARCH-family</strong> models, <strong>Random Forests</strong>, feedforward <strong>neural networks</strong>, and </strong>LSTM</strong>-based models, then compared the forecasts with at-the-money implied volatility to construct a volatility-edge signal.
+</p>
 
----
+<p>
+The strategy component translates this signal into long- and short-volatility option positions, with attention to option structure selection, entry and exit rules, position sizing, and risk management. The full workflow was implemented and backtested in <strong>QuantConnect</strong>.
+</p>
 
-## Chess Anomaly Detection with Metropolis-Hastings Sampling
+<p><strong>Methods:</strong> GARCH, EGARCH, GJR-GARCH, Random Forest, feedforward neural networks, LSTM, volatility-edge signal construction, options strategy design, backtesting</p>
 
-**Keywords:** anomaly detection, Metropolis-Hastings, Bayesian computation, chess analytics, FastAPI
+<p><strong>Tools:</strong> Python, QuantConnect, scikit-learn, arch, pandas</p> 
 
-This project develops a probabilistic framework for detecting unusually strong chess play by comparing observed move sequences against a counterfactual human baseline. The method uses Maia-based human move proposals and Stockfish-based centipawn-loss scoring within a Metropolis-Hastings sampling framework.
+<a class="project-link-button" href="files/volatility_forecasting_options_strategy.pdf">Read Paper</a>
 
-We also built a FastAPI service to make the sampler reproducible and easier to run.
+</div>
 
-**Methods:** Metropolis-Hastings sampling, empirical p-value testing, Markov chain diagnostics, anomaly detection  
-**Tools:** Python, FastAPI, Docker, Stockfish, Polars
+<div class="project-detail-card" id="chess-anomaly-detection-with-metropolis-hastings-sampling">
 
----
+<h2>Chess Anomaly Detection with Metropolis-Hastings Sampling</h2>
 
-## Web-Scraped Recipe Dataset Construction and Interactive Analysis
+<div class="project-tags">
+<span>Anomaly Detection</span>
+<span>Metropolis-Hastings</span>
+<span>Bayesian Computation</span>
+<span>FastAPI</span>
+<span>Stockfish</span>
+</div>
 
-**Keywords:** web scraping, data cleaning, R Shiny, interactive analysis, data validation
+<p>
+This project develops a <strong>probabilistic anomaly detection framework</strong> for identifying unusually strong chess play by comparing observed move sequences against a counterfactual human baseline. The method uses <strong>Maia-based human move proposals</strong> and <strong>Stockfish-based centipawn-loss scoring</strong> within a <strong>Metropolis-Hastings sampling</strong> framework.
+</p>
 
-This project builds an automated web-scraping pipeline to collect and structure recipe data from the official game Wiki for *Stardew Valley*. The pipeline extracts recipe structure, ingredient composition, and numerical buff effects from heterogeneous HTML pages, with parsing and validation workflows designed to improve data quality and reproducibility.
+<p>
+The project also includes a <strong>FastAPI service</strong> to make the sampler easier to run, reproduce, and test through structured API endpoints.
+</p>
 
-We also developed core analysis logic to support recipe search, craftable recipe identification, and minimal-additional-ingredient recommendations. The final output includes an interactive R Shiny application that enables flexible exploration of the dataset and supports high-usability recipe analysis workflows.
+<p><strong>Methods:</strong> Metropolis-Hastings sampling, empirical p-value testing, Markov chain diagnostics</p>
 
-[GitHub Repository](https://github.com/SimengWu17/Stardew_Valley_R_Shiny){.btn .btn-primary}
+<p><strong>Tools:</strong> Python, FastAPI, Docker, Stockfish, Polars</p>
 
-**Methods:** web scraping, HTML parsing, data validation, rule-based filtering, interactive application development  
-**Tools:** R, R Shiny, rvest, dplyr, stringr
+</div>
 
----
+<div class="project-detail-card" id="web-scraped-recipe-dataset-construction-and-interactive-analysis">
 
-## Insurance Subrogation Outcome Prediction
+<h2>Web-Scraped Recipe Dataset Construction and Interactive Analysis</h2>
 
-**Keywords:** supervised learning, classification, insurance analytics, model evaluation
+<div class="project-tags">
+<span>Web Scraping</span>
+<span>R Shiny</span>
+<span>Data Cleaning</span>
+<span>Interactive Analysis</span>
+</div>
 
-This project focuses on predicting insurance subrogation outcomes using claim-level information, loss severity indicators, and recovery-related attributes. I performed end-to-end preprocessing and feature engineering, including categorical encoding, interaction terms, and distributional transformations.
+<p>
+This project builds an automated <strong>web-scraping pipeline</strong> to collect and structure recipe data from the official game Wiki for <em>Stardew Valley</em>. The pipeline extracts recipe structure, ingredient composition, and numerical buff effects from heterogeneous HTML pages.
+</p>
 
-I developed and compared multiple tree-based models, including XGBoost, LightGBM, CatBoost, and TabM. The final modeling pipeline emphasized reproducible experimentation, cross-validation, and out-of-sample robustness.
+<p>
+The final output includes an <strong>interactive R Shiny application</strong> that supports recipe search, craftable recipe identification, and minimal-additional-ingredient recommendations.
+</p>
 
-**Methods:** classification, feature engineering, cross-validation, model comparison, ensemble learning  
-**Tools:** Python, XGBoost, LightGBM, CatBoost, scikit-learn, SHAP
+<p><strong>Methods:</strong> web scraping, HTML parsing, rule-based filtering, interactive application development</p>
+
+<p><strong>Tools:</strong> R, R Shiny, rvest, dplyr, stringr</p>
+
+<a class="project-link-button" href="https://github.com/SimengWu17/Stardew_Valley_R_Shiny">GitHub Repository</a>
+
+</div>
+
+<div class="project-detail-card" id="insurance-subrogation-outcome-prediction">
+
+<h2>Insurance Subrogation Outcome Prediction</h2>
+
+<div class="project-tags">
+<span>Supervised Learning</span>
+<span>Insurance Analytics</span>
+<span>Classification</span>
+<span>Model Evaluation</span>
+</div>
+
+<p>
+This project focuses on predicting <strong>insurance subrogation outcomes</strong> using claim-level information, loss severity indicators, and recovery-related attributes. I performed preprocessing and feature engineering, including categorical encoding, interaction terms, and distributional transformations.
+</p>
+
+<p>
+I developed and compared multiple tree-based models, including <strong>XGBoost</strong>, <strong>LightGBM</strong>, <strong>CatBoost</strong>, and <strong>TabM</strong>. The modeling pipeline emphasized reproducible experimentation, cross-validation, and out-of-sample robustness.
+</p>
+
+<p><strong>Methods:</strong> classification, feature engineering, cross-validation, model comparison, ensemble learning</p>
+
+<p><strong>Tools:</strong> Python, XGBoost, LightGBM, CatBoost, scikit-learn, SHAP</p>
+
+</div>
+
+</div>
