@@ -32,7 +32,7 @@ My interests span statistical modeling, missing data, Bayesian methods, machine 
 
 [View Experience](experience.qmd){.btn .btn-secondary .hero-btn}
 
-[Download CV](files/Simeng_CV2026.pdf){.btn .btn-outline-dark .hero-btn}
+[Download CV](files/SimengWu_CV2026.pdf){.btn .btn-outline-dark .hero-btn}
 
 </div>
 
@@ -85,6 +85,13 @@ Statistical Modeling · Missing Data · Bayesian Methods · Machine Learning · 
 <a href="projects.qmd#insurance-subrogation-outcome-prediction">
 <img src="images/insurance.png" alt="Insurance prediction">
 <div class="project-card-overlay">Insurance Subrogation Prediction</div>
+</a>
+</div>
+
+<div class="project-card">
+<a href="projects.qmd#momentum-based-algorithmic-trading-strategy">
+<img src="images/momentum.png" alt="Momentum-based algorithmic trading">
+<div class="project-card-overlay">Momentum-Based Algorithmic Trading Strategy</div>
 </a>
 </div>
 
@@ -205,7 +212,7 @@ Beyond technical work, I have long been interested in writing and visual communi
 
 <div class="contact-item">
 <span class="contact-icon">CV</span>
-<a href="files/Simeng_CV2026.pdf">Curriculum Vitae</a>
+<a href="files/SimengWu_CV2026.pdf">Curriculum Vitae</a>
 </div>
 
 </div>

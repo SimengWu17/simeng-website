@@ -167,7 +167,7 @@ Short-Dated Options Volatility Forecasting and Trading Strategy
 <p><span>Volatility Forecasting</span> <span>Options Trading</span> <span>GARCH</span> <span>LSTM</span> <span>Neural Networks</span></p>
 </div>
 <p>
-This project develops an end-to-end framework that connects short-horizon volatility forecasting with systematic SPY options strategy design. I modeled annualized 5-day realized volatility using <strong>GARCH-family</strong> models, <strong>Random Forests</strong>, feedforward <strong>neural networks</strong>, and LSTM-based models, then compared the forecasts with at-the-money implied volatility to construct a volatility-edge signal.
+This project develops an end-to-end framework that connects short-horizon volatility forecasting with systematic SPY options strategy design. I modeled annualized 5-day realized volatility using <strong>GARCH-family</strong> models, <strong>Random Forests</strong>, feedforward <strong>neural networks</strong>, and <strong>LSTM</strong>-based models, then compared the forecasts with at-the-money implied volatility to construct a volatility-edge signal.
 </p>
 <p>
 The strategy component translates this signal into long- and short-volatility option positions, with attention to option structure selection, entry and exit rules, position sizing, and risk management. The full workflow was implemented and backtested in <strong>QuantConnect</strong>.
@@ -239,6 +239,29 @@ I developed and compared multiple tree-based models, including <strong>XGBoost</
 </p>
 <p>
 <strong>Tools:</strong> Python, XGBoost, LightGBM, CatBoost, scikit-learn, SHAP
+</p>
+</div>
+<div id="momentum-based-algorithmic-trading-strategy" class="project-detail-card">
+<h2 class="anchored">
+Momentum-Based Algorithmic Trading Strategy
+</h2>
+<div class="project-tags">
+<p><span>Algorithmic Trading</span> <span>Momentum Strategy</span> <span>QuantConnect</span> <span>Risk Management</span> <span>Python</span></p>
+</div>
+<p>
+This project develops a systematic momentum-rotation trading strategy in <strong>QuantConnect</strong> using selected S&amp;P 500 stocks. I combined technical indicators including <strong>SMA</strong>, <strong>RSI</strong>, <strong>Bollinger Bands</strong>, and <strong>20-day momentum</strong> signals to identify long opportunities and construct a rules-based trading framework.
+</p>
+<p>
+The strategy design included both <strong>universe selection</strong> and <strong>risk-management rules</strong>. I screened candidate stocks based on liquidity, sector diversification, recent momentum, volatility, and maximum drawdown, and selected <strong>PLTR</strong>, <strong>GEV</strong>, and <strong>TSLA</strong> as the final trading universe. I also implemented weekly rebalancing, a SPY 200-day market regime filter, fixed and trailing stop-loss rules, trend deterioration exits, and RSI-based exits.
+</p>
+<p>
+To reduce look-ahead bias, I split the backtest into training, validation, and out-of-sample periods. The final out-of-sample backtest achieved a <strong>Sharpe ratio of 2.538</strong> and a <strong>net profit of $2.77M</strong> on a $10M initial portfolio.
+</p>
+<p>
+<strong>Methods:</strong> momentum rotation, technical indicators, universe selection, backtesting, risk management
+</p>
+<p>
+<strong>Tools:</strong> Python, QuantConnect, pandas
 </p>
 </div>
 </div>
