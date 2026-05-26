@@ -171,6 +171,94 @@ Academic training and selected technical tools that support my work in statistic
 
 </div>
 
+<div id="beyond-work" class="beyond-work-section">
+
+<h1 class="beyond-work-title">Beyond Work - Baking Moments</h1>
+
+<p class="beyond-work-intro">
+Outside of academic and technical work, I enjoy baking as a slower, hands-on form of creativity. I like the balance between precision and presentation: adjusting small details, working patiently through a process, and seeing how the final result comes together.
+</p>
+
+<div class="fan-carousel">
+
+<button class="fan-btn fan-btn-left" type="button" onclick="moveFan(-1)">‹</button>
+
+<div class="fan-stage" id="fanStage">
+
+<img class="fan-card active" src="images/baking_1.png" alt="Baking photo 1" data-caption="Pistachio · Strawberry · Milk">
+<img class="fan-card right-1" src="images/baking_2.png" alt="Baking photo 2" data-caption="Three Different Flavors Of Tiramisu">
+<img class="fan-card right-2" src="images/baking_3.png" alt="Baking photo 3" data-caption="Taro · Salted Egg Yolk · Mochi">
+<img class="fan-card hidden-card" src="images/baking_4.png" alt="Baking photo 4" data-caption="Matcha · Vanilla">
+<img class="fan-card hidden-card" src="images/baking_5.png" alt="Baking photo 5" data-caption="Earl Grey · Vanilla">
+<img class="fan-card hidden-card" src="images/baking_6.png" alt="Baking photo 6" data-caption="Matcha · Mochi">
+<img class="fan-card hidden-card" src="images/baking_7.png" alt="Baking photo 7" data-caption="Matcha">
+<img class="fan-card left-2" src="images/baking_8.png" alt="Baking photo 8" data-caption="Lemon">
+<img class="fan-card left-1" src="images/baking_9.png" alt="Baking photo 9" data-caption="Matcha · Berries">
+
+</div>
+
+<button class="fan-btn fan-btn-right" type="button" onclick="moveFan(1)">›</button>
+
+</div>
+
+<div class="fan-caption" id="fanCaption">
+Pistachio · Strawberry · Milk
+</div>
+
+<p class="fan-hint">Click the arrows to browse baking moments.</p>
+
+</div>
+
+<script>
+let fanIndex = 0;
+
+function updateFan() {
+  const cards = document.querySelectorAll(".fan-card");
+  const total = cards.length;
+  const caption = document.getElementById("fanCaption");
+
+  cards.forEach((card, i) => {
+    let offset = i - fanIndex;
+
+    if (offset > total / 2) {
+      offset -= total;
+    }
+
+    if (offset < -total / 2) {
+      offset += total;
+    }
+
+    card.className = "fan-card";
+
+    if (offset === 0) {
+      card.classList.add("active");
+    } else if (offset === -1) {
+      card.classList.add("left-1");
+    } else if (offset === -2) {
+      card.classList.add("left-2");
+    } else if (offset === 1) {
+      card.classList.add("right-1");
+    } else if (offset === 2) {
+      card.classList.add("right-2");
+    } else {
+      card.classList.add("hidden-card");
+    }
+  });
+
+  if (caption && cards[fanIndex]) {
+    caption.textContent = cards[fanIndex].dataset.caption || "";
+  }
+}
+
+function moveFan(direction) {
+  const cards = document.querySelectorAll(".fan-card");
+  fanIndex = (fanIndex + direction + cards.length) % cards.length;
+  updateFan();
+}
+
+document.addEventListener("DOMContentLoaded", updateFan);
+</script>
+
 <div id="about" class="about-section">
 
 <h1 class="about-title">About</h1>
