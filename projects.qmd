@@ -58,6 +58,8 @@ The project also includes a <strong>FastAPI service</strong> to make the sampler
 
 <p><strong>Tools:</strong> Python, FastAPI, Docker, Stockfish, Polars</p>
 
+<a class="project-link-button" href="files/chess_anomaly_detection.html">View HTML Report</a>
+
 </div>
 
 <div class="project-detail-card" id="web-scraped-recipe-dataset-construction-and-interactive-analysis">
@@ -83,7 +85,7 @@ The final output includes an <strong>interactive R Shiny application</strong> th
 
 <p><strong>Tools:</strong> R, R Shiny, rvest, dplyr, stringr</p>
 
-<a class="project-link-button" href="https://github.com/SimengWu17/Stardew_Valley_R_Shiny">GitHub Repository</a>
+<a class="project-link-button" href="files/recipe_shiny_report.html" target="_blank">View HTML Report</a>
 
 </div>
 
@@ -139,6 +141,8 @@ To reduce look-ahead bias, I split the backtest into training, validation, and o
 <p><strong>Methods:</strong> momentum rotation, technical indicators, universe selection, backtesting, risk management</p>
 
 <p><strong>Tools:</strong> Python, QuantConnect, pandas</p>
+
+<a class="project-link-button" href="files/momentum_trading_strategy_report.pdf" target="_blank">Read Report</a>
 
 </div>
 
